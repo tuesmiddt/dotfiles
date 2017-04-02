@@ -12,6 +12,13 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'git://github.com/altercation/vim-colors-solarized.git'
 Plugin 'git://github.com/ctrlpvim/ctrlp.vim.git'
 Plugin 'fatih/vim-go'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets.git'
+Plugin 'L9'
+Plugin 'othree/vim-autocomplpop'
 
 "End Vundle Plugins
 
@@ -27,12 +34,15 @@ colorscheme solarized
 set tabstop=4
 set softtabstop=4
 set expandtab
+set backspace=2
 
 "UI
 set number
 set showcmd
 filetype indent on
 set showmatch
+set hls
+set cursorline
 
 "Folding
 set foldenable

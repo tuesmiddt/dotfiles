@@ -89,6 +89,7 @@ fi
 
 export PATH="/home/csw/miniconda3/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
+export  PATH=".:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 eval "$(rbenv init -)"
