@@ -19,7 +19,7 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets.git'
 Plugin 'L9'
 Plugin 'othree/vim-autocomplpop'
-
+Plugin 'wesQ3/vim-windowswap'
 "End Vundle Plugins
 
 call vundle#end()
