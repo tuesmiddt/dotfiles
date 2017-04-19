@@ -52,7 +52,5 @@ set foldmethod=indent
 "Key Mappings
 nnoremap j gj
 nnoremap k gk
-nnoremap ; :
-vnoremap ; :
 
 let mapleader=","
