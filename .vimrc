@@ -36,6 +36,9 @@ set softtabstop=4
 set expandtab
 set backspace=2
 
+autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType ruby autocmd BufWritePre * %s/\s\+$//e
+
 "UI
 set number
 set showcmd
