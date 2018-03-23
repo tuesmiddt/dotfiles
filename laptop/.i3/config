@@ -280,6 +280,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
+exec --no-startup-id "xinput set-prop 'DELL081C:00 044E:121F Mouse' 'libinput Scroll Method Enabled' 0, 0, 1"
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
