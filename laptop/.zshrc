@@ -2,12 +2,19 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-ZSH=/usr/share/oh-my-zsh/
+  export ZSH=/home/shaowei/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +58,13 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ssh-agent)
+plugins=(
+  git ssh-agent zsh-autosuggestions
+)
+
+
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -82,15 +95,9 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
-if [[ ! -d $ZSH_CACHE_DIR ]]; then
-  mkdir $ZSH_CACHE_DIR
-fi
-
-export PATH="/home/csw/miniconda3/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-export  PATH=".:$PATH"
-
-source $ZSH/oh-my-zsh.sh
-eval "$(rbenv init -)"
+export PATH=".:$PATH"
+alias ls="ls --color=tty -a"
+alias la="ls --color=tty -alh"
+alias sunfire="ssh shaowei@sunfire.comp.nus.edu.sg"
+alias caprica="ssh shaowei@caprica.d2.comp.nus.edu.sg"
 
