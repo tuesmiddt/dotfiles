@@ -298,9 +298,9 @@ exec --no-startup-id "xinput set-prop 'DELL081C:00 044E:121F Mouse' 'libinput Sc
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec --no-startup-id i3-msg "workspace 1; exec firefox; exec telegram-desktop;"
+exec --no-startup-id i3-msg "workspace 1; exec termite; exec firefox; exec telegram-desktop;"
 exec --no-startup-id spotify;
-exec --no-startup-id "sh -c 'sleep 2; i3-msg [class=\"Spotify\"] move to workspace 10; wmctrl -r \"spotify\" -b remove,demands_attention; wmctrl -r \"telegram\" -b remove,demands_attention'"
+exec --no-startup-id "sh -c 'sleep 2; i3-msg [class=\"Spotify\"] move to workspace 10; i3-msg [class=\"Firefox\"] move to workspace 9; wmctrl -r \"spotify\" -b remove,demands_attention; wmctrl -r \"telegram\" -b remove,demands_attention'"
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
