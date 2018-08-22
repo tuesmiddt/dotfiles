@@ -1,0 +1,11 @@
+# Elixir language support
+elixir_ls
+
+# VSCode
+.vscode
+
+# ASDF version manager
+.tool-versions
+
+# Temporary files
+*~

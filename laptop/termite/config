@@ -7,7 +7,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = SourceCodePro 12
+font = SourceCodePro 14
 scrollback_lines = 10000
 search_wrap = true
 #icon_name = terminal
@@ -32,80 +32,28 @@ filter_unmatched_urls = true
 #modify_other_keys = false
 
 [colors]
+cursor = #d8dee9
+cursor_foreground = #2e3440
 
-# special
-foreground      = #a7adba
-foreground_bold = #a7adba
-cursor          = #a7adba
-background      = #343d46
+foreground = #d8dee9
+foreground_bold = #d8dee9
+background = #2e3440
 
-# black
-color0  = #343d46
-color8  = #a7adba
+highlight = #4c566a
 
-# red
-color1  = #c7ae95
-color9  = #c7ae95
-
-# green
-color2  = #95c7ae
-color10 = #95c7ae
-
-# yellow
-color3  = #aec795
-color11 = #aec795
-
-# blue
-color4  = #ae95c7
-color12 = #ae95c7
-
-# magenta
-color5  = #c795ae
-color13 = #c795ae
-
-# cyan
-color6  = #95aec7
-color14 = #95aec7
-
-# white
-color7  = #a7adba
-color15 = #d8dee9
-
-# [colors]
-# # special
-# foreground      = #a7adba
-# foreground_bold = #a7adba
-# cursor          = #a7adba
-# background      = #343d46
-# 
-# # black
-# color0  = #343d46
-# color8  = #a7adba
-# 
-# # red
-# color1  = #f07178
-# color9  = #f09da2
-# 
-# # green
-# color2  = #99c794
-# color10 = #99c794
-# 
-# # yellow
-# color3  = #f9ae58
-# color11 = #fac863
-# 
-# # blue
-# color4  = #6699cc
-# color12 = #89ddf3
-# 
-# # magenta
-# color5  = #7986cb
-# color13 = #c594c5
-# 
-# # cyan
-# color6  = #5fb3b3
-# color14 = #90cfcf
-# 
-# # white
-# color7  = #a7adba
-# color15 = #d8dee9
+color0  = #3b4252
+color1  = #bf616a
+color2  = #a3be8c
+color3  = #ebcb8b
+color4  = #81a1c1
+color5  = #b48ead
+color6  = #88c0d0
+color7  = #e5e9f0
+color8  = #4c566a
+color9  = #bf616a
+color10 = #a3be8c
+color11 = #ebcb8b
+color12 = #81a1c1
+color13 = #b48ead
+color14 = #8fbcbb
+color15 = #eceff4
